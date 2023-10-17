@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!-- Starting Here -->
+    <div class="all-section">
+  <div class="main-head">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Survey form for selcting the technical Club</p>
+  </div>
+   
+    
+  <!-- Form Section -->
+    <form class="Survey" id="survey-form">
+        <div class="input-element">
+
+        <label id="name-label" style="font-weight: 900;">
+         Name
+        </label >
+         <input id="name" type="text" placeholder="Enter Your Name" required/><br><br>
+        
+        <label id="email-label" style="font-weight: 900;">
+        Email
+        </label >
+        <input id="email" type="email" placeholder="Enter Your Email" required/><br><br>
+    
+
+        <label id="number-label" style="font-weight: 900;">
+         Contact-No
+        </label >
+         <input id="number" type="number" placeholder="Enter Your Contact Number" required min="50" max="200"><br><br>
+                
+    
+      <!-- dropdown -->
+      <div class="dropdown-section">
+    <p class="heading-dropwdown">Select Your Year</p>
+    <select id="dropdown" class="survey-form">
+                <option value="0" selected="" disabled="">Select Your Year</option>
+                <option value="1">1st</option>
+                <option value="1">2nd</option>
+                <option value="1">3rd</option>
+                <option value="1">4th</option>
+            </select>
+        </div>
+    
+    
+    
+        <!-- reviews radio buttons -->
+        <div class="advertisement">
+    <p class="re">Would you tell your friends to join this technical club ?</p>
+     <input type="radio" id="offcourse" name="fav_language" value="offcourse ">
+     <label for="html">Offcourse</label><br>
+     <input type="radio" id="Definetly-No" name="fav_language" value="Definetly-No">
+     <label for="css">Definetly-No</label><br>
+    <input type="radio" id="Not-sure" name="fav_language" value="Not-sure">
+     <label for="Not-sure">Not-sure</label><br>
+    </div>
+    
+    
+    
+     <!-- selection of course  -->
+     <div class="selection-section">
+    <p class="se">Select Your interest</p>
+    <input type="checkbox" name="prefer" value="Web-Development" class="inline" />Web-Development
+    </label><br>
+    <label>
+      <input type="checkbox" name="prefer" value="C++" class="inline" />C++
+    </label><br>
+    <input type="checkbox" name="prefer" value="Python" class="inline" />Python
+    </label><br>
+    <label>
+      <input type="checkbox" name="prefer" value="Java" class="inline" />Java
+    </label><br>  
+</div>
+    
+    <!-- textarea section -->
+    <div class="review">
+    <p class="final">Tell Your Reason for joining us</p>
+    <textarea name="Any query write here" id="" cols="30" rows="10">Comment...
+    </textarea>
+    <br>
+</div>
+<br>
+
+    
+
+<div class="submit-section">
+    <!-- submit button -->
+    <input id="submit" type="submit">
+    </div>
+</div>
+</form>
+
+</div>
+</body>
+</html>
